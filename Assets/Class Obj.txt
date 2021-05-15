@@ -1,0 +1,118 @@
+Player Obj
+
+>PlayerControl 
+Speed int
+JumpForce int
+Rb GameObject
+Fuel int
+Fuellimit int
+OnGround bool
+	Start()
+	FixedUpdate()
+	Move()
+	Jump()
+	IsGrounded()
+	Refuel()
+
+>PlayerCamera
+Looksensitivity int
+MinX int
+MaxX int
+CamAnchor GameObject
+CurX int
+LockCursor bool
+	Start()
+	LateUpdate()
+	Update()
+
+>Score
+Score int
+Text GameObject<Text>
+	Start()
+	UpdateScore()
+	
+
+>PlayerAnimate
+Animator GameObject
+Jetpack MeshRenderer
+	Start()
+	Update()
+
+
+
+
+
+
+Collectable Obj
+
+>Coin Animation
+RotateSpeed int
+Rb RigidBody
+	Start()
+	Update()
+
+>Collectables
+	OnTriggerEnter()
+
+
+
+
+
+JetPackBarBG Obj 
+
+>JetPackBarFG
+
+>Health Bar Control 
+Healthbar Image
+Player Gameobject
+	Start()
+	Update()
+
+
+
+
+
+
+
+
+MainMenuDoor Obj
+>MainMenutxt
+	>Load Level 
+	Levelnumber int
+	OnTriggerEnter()
+
+Restart Obj
+>Restarttxt
+	>Load Level 
+	Levelnumber int
+	OnTriggerEnter()
+
+
+
+
+EndPlate Obj
+
+>Update Score
+Score Gameobject
+Time Gameobject
+Score GUI Gameobject
+Score Board Gameobject<Text>
+time int
+score int
+Start()
+OnTriggerEnter()
+GetHighScore()
+OpenGateways()
+
+
+
+MenuController
+
+>MainMenu
+Levelnumber int
+StartGame()
+QuitGame()
+
+
+
+
